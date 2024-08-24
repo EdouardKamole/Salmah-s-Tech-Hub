@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Salmah's Tech Hub</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">
+              <i class="fas fa-th-list"></i> Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="my-4">Product Catalog</h1>
+
+      <!-- Search and Filter Section -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="search-bar"
+            class="form-control"
+            placeholder="Search products..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="form-inline">
+            <select id="category-filter" class="form-control mr-2">
+              <option value="">All Categories</option>
+              <option value="smart-speakers">Smart Speakers</option>
+              <option value="tablets">Tablets</option>
+              <option value="home-automation">Home Automation</option>
+              <option value="laptops">Laptops</option>
+              <option value="mobile-phones">Mobile Phones</option>
+              <option value="headphones">Headphones</option>
+              <option value="televisions">Televisions</option>
+              <option value="cameras">Cameras</option>
+              <option value="kitchen-appliances">Kitchen Appliances</option>
+              <option value="gaming-consoles">Gaming Consoles</option>
+              <option value="tools">Tools</option>
+            </select>
+            <select id="brand-filter" class="form-control mr-2">
+              <option value="">All Brands</option>
+              <option value="brand-a">Brand A</option>
+              <option value="brand-b">Brand B</option>
+            </select>
+            <select id="price-filter" class="form-control">
+              <option value="">All Prices</option>
+              <option value="0-50">Under $50</option>
+              <option value="50-100">$50 - $100</option>
+              <option value="100-200">$100 - $200</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="row">
+        <!-- Products will be dynamically added here -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-section">
+            <h3>Get to Know Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Salmah</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Salmah Devices</a></li>
+              <li><a href="#">Salmah Science</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Make Money with Us</h3>
+            <ul>
+              <li><a href="#">Sell products on Salmah</a></li>
+              <li><a href="#">Sell on Salmah Business</a></li>
+              <li><a href="#">Sell apps on Salmah</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+              <li><a href="#">Advertise Your Products</a></li>
+              <li><a href="#">Self-Publish with Us</a></li>
+              <li><a href="#">Host an Salmah Hub</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Salmah Payment Products</h3>
+            <ul>
+              <li><a href="#">Salmah Business Card</a></li>
+              <li><a href="#">Shop with Points</a></li>
+              <li><a href="#">Reload Your Balance</a></li>
+              <li><a href="#">Salmah Currency Converter</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Let Us Help You</h3>
+            <ul>
+              <li><a href="#">Salmah and COVID-19</a></li>
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Shipping Rates & Policies</a></li>
+              <li><a href="#">Returns & Replacements</a></li>
+              <li><a href="#">Manage Your Content and Devices</a></li>
+              <li><a href="#">salmah Assistant</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-section">
+            <h3>Salmah Music</h3>
+            <p>Stream millions of songs</p>
+          </div>
+          <div class="footer-section">
+            <h3>Salmah Ads</h3>
+            <p>Reach customers wherever they spend their time</p>
+          </div>
+          <div class="footer-section">
+            <h3>6pm</h3>
+            <p>Score deals on fashion brands</p>
+          </div>
+          <div class="footer-section">
+            <h3>AbeBooks</h3>
+            <p>Books, art & collectibles</p>
+          </div>
+          <div class="footer-section">
+            <h3>ACX</h3>
+            <p>Audiobook Publishing Made Easy</p>
+          </div>
+          <div class="footer-section">
+            <h3>Sell on Salmah</h3>
+            <p>Start a Selling Account</p>
+          </div>
+          <div class="footer-section">
+            <h3>Salmah Business</h3>
+            <p>Everything For Your Business</p>
+          </div>
+          <div class="footer-section">
+            <h3>SalmahGlobal</h3>
+            <p>Ship Orders Internationally</p>
+          </div>
+          <div class="footer-section">
+            <h3>Home Services</h3>
+            <p>Experienced Pros Happiness Guarantee</p>
+          </div>
+          <div class="footer-section">
+            <h3>Salmah Web Services</h3>
+            <p>Scalable Cloud Computing Services</p>
+          </div>
+          <div class="footer-section">
+            <h3>Audible</h3>
+            <p>Listen to Books & Original Audio Performances</p>
+          </div>
+          <div class="footer-section">
+            <h3>Box Office Mojo</h3>
+            <p>Find Movie Box Office Data</p>
+          </div>
+          <div class="footer-section">
+            <h3>Goodreads</h3>
+            <p>Book reviews & recommendations</p>
+          </div>
+          <div class="footer-section">
+            <h3>IMDb</h3>
+            <p>Movies, TV & Celebrities</p>
+          </div>
+          <div class="footer-section">
+            <h3>IMDbPro</h3>
+            <p>Get Info Entertainment Professionals Need</p>
+          </div>
+          <div class="footer-section">
+            <h3>Kindle Direct Publishing</h3>
+            <p>Indie Digital & Print Publishing Made Easy</p>
+          </div>
+          <div class="footer-section">
+            <h3>Prime Video Direct</h3>
+            <p>Video Distribution Made Easy</p>
+          </div>
+          <div class="footer-section">
+            <h3>Shopbop</h3>
+            <p>Designer Fashion Brands</p>
+          </div>
+          <div class="footer-section">
+            <h3>Woot!</h3>
+            <p>Deals and Shenanigans</p>
+          </div>
+          <div class="footer-section">
+            <h3>Zappos</h3>
+            <p>Shoes & Clothing</p>
+          </div>
+          <div class="footer-section">
+            <h3>Ring</h3>
+            <p>Smart Home Security Systems</p>
+          </div>
+          <div class="footer-section">
+            <h3>eero WiFi</h3>
+            <p>Stream 4K Video in Every Room</p>
+          </div>
+          <div class="footer-section">
+            <h3>Blink</h3>
+            <p>Smart Security for Every Home</p>
+          </div>
+          <div class="footer-section">
+            <h3>Neighbors App</h3>
+            <p>Real-Time Crime & Safety Alerts</p>
+          </div>
+          <div class="footer-section">
+            <h3>Salmah Subscription Boxes</h3>
+            <p>Top subscription boxes – right to your door</p>
+          </div>
+          <div class="footer-section">
+            <h3>PillPack</h3>
+            <p>Pharmacy Simplified</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

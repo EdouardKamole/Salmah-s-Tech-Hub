@@ -1,0 +1,253 @@
+/* Custom styles */
+body {
+    padding-top: 20px;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Product card animations */
+.product-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter section styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Card image styling */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Georgia', serif;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.footer-top {
+  border-bottom: 1px solid #3c4858;
+  padding-bottom: 20px;
+  overflow: hidden; /* Clear float */
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-top .footer-section {
+  width: 25%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.footer-top .footer-section:last-child {
+  padding-right: 0;
+}
+
+.footer-top .footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-top .footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-top .footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-top .footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-top .footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #0f171f;
+  padding: 20px 0;
+  overflow: hidden; /* Clear float */
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .footer-section {
+  width: 20%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.footer-bottom .footer-section:last-child {
+  padding-right: 0;
+}
+
+.footer-bottom .footer-section h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom .footer-section p {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .footer-top .footer-section,
+  .footer-bottom .footer-section {
+      width: 50%;
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+
+.container footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #131921;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-top {
+    border-bottom: 1px solid #3c4858;
+    padding-bottom: 20px;
+    overflow: hidden; /* Clear float */
+  }
+  
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-top .footer-section {
+    width: 25%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-top .footer-section:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-top .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-top .footer-section ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-top .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-top .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-top .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    background-color: #0f171f;
+    padding: 20px 0;
+    overflow: hidden; /* Clear float */
+  }
+  
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom .footer-section {
+    width: 20%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .footer-bottom .footer-section:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-bottom .footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom .footer-section p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top .footer-section,
+    .footer-bottom .footer-section {
+        width: 50%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+  }
+  
+  

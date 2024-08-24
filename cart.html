@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Salmah's Tech Hub</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">
+              <i class="fas fa-th-list"></i> Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h1 class="mb-4">Shopping Cart</h1>
+      <div id="cart-items" class="mb-4">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Total: $<span id="cart-total">0.00</span></h3>
+        </div>
+        <div class="col-md-6 text-right">
+          <button id="checkout-button" class="btn btn-primary">
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+      <div id="payment-methods" class="mt-4" style="display: none">
+        <h3>Select Payment Method</h3>
+        <form>
+          <div class="form-group">
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method" class="form-control">
+              <option value="credit-card">Credit Card</option>
+              <option value="debit-card">Debit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="amazon-pay">gurantee trust bank</option>
+              <option value="mobile-money">Mobile Money</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success">Pay Now</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
